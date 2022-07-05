@@ -11,3 +11,21 @@ body {
 * {
   box-sizing: border-box;
 }
+ul{
+  list-style: none;
+}
+li{
+  float: left;
+  margin-right: 10px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.pagination{
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+    color: #ACB6C6;
+}

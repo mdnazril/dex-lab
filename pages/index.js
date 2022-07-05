@@ -1,11 +1,13 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Movielist from '../component/section/movielist'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>Movie @mdnazril</title>
+      {/* <meta /> */}
+    </Head>
     <Movielist/>
     </>
   )
