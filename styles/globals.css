@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 
+:root{
+  --body-primary:#E1E7F1;
+  --text-black:#000000;
+  --text-primary:#ACB6C6;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  background: #E1E7F1;
+  background: var(--body-primary);
   font-family: 'Roboto', sans-serif;
   }
 
@@ -23,9 +29,14 @@ a{
   color: inherit;
   cursor: pointer;
 }
+.active{
+  color: var(--text-black);
+  font-size: clamp(2rem, 2.1vw, 3.1rem);
+}
 .pagination{
   float: right;
-  font-size: 30px;
+  font-size: clamp(1.8rem, 2vw, 3rem);
   font-weight: bold;
-    color: #ACB6C6;
+  color: var(--text-primary);
+  margin-top: 0;
 }

@@ -40,7 +40,7 @@ const Movielist = () => {
                         <img src={movie.poster_path}  alt="cover img"  
                          className={styles.image} />
                         </div>
-                        <div className="detail">
+                        <div className={styles.detail}>
                         <p className={styles.title}>{movie.title}</p>
                         <p className={styles.date}>{movie.release_date.slice(0,4)}</p>
                         </div>
@@ -52,6 +52,7 @@ const Movielist = () => {
                 <p>PAGE</p>
                 <Pagination postsPerPage={postsPerPage}
                 totalPosts={movieData.length}
+                currentPage={currentPage}
                 paginate={paginate} /> 
                 </div>
         </div>

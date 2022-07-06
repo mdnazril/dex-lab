@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from 'next/link'
 
-const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
+const Pagination = ({ postsPerPage, totalPosts, paginate,currentPage }) => {
+
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
@@ -13,8 +13,9 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
       <ul className='pagination'>
         {pageNumbers.map(number => (
           <li key={number} className='page-item'>
-            <a onClick={() => paginate(number)} className='page-link'>
-              {number}
+            <a onClick={() => paginate(number)} 
+                className={`page-link ${currentPage === number ? "active" : ""}`}>
+                {number}
             </a>
           </li>
         ))}
