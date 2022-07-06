@@ -4,7 +4,7 @@
 
 ## Movie Website
 
- A simple project to build a somewhat replicate real movie website. Built using ReactJs with Nextjs framework.  
+ A simple project to build a simple list of movie content management system. Built using ReactJs with Nextjs framework.  
 
 ## preview/Link
 
