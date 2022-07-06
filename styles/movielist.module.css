@@ -45,6 +45,7 @@
 }
 .detail{
     float: left;
+    margin-left: 0;
 }
 .date{
     font-size: 16px;
@@ -78,6 +79,9 @@
     }
     .movieContainer{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .detail{
+        width: 275px;
     }
     .image{
         width: 275px;
