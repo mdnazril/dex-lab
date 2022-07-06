@@ -1,6 +1,6 @@
 # MOVIE WEBSITE FOR TEST @ DEX LABS SDN BHD
 
- This project was created for sole purpose of fulfill the requirement for needed by Dex Labs Sdn Bhd.
+ This project was created for sole purpose of fulfilling the requirement that needed by Dex Labs Sdn Bhd.
 
 ## Movie Website
 
