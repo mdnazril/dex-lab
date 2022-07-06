@@ -18,7 +18,7 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+    gap: 2vw;
 }
 .cover{
     margin-bottom: 2rem;
@@ -67,22 +67,22 @@
 }
 }
 @media(max-width:1024px){
+    
+    .movieContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:768px){
     .container{
         width: 90vw;
     }
     .movieContainer{
-        grid-template-columns: repeat(3, 1fr);
-    }.image{
-            width: 275px;
-            height: 412px;
-        }
-}
-@media (max-width:768px){
-    
-    .movieContainer{
         grid-template-columns: repeat(2, 1fr);
     }
-    
+    .image{
+        width: 275px;
+        height: 412px;
+    }
     }
     @media (max-width:426px){
         .movieContainer{
